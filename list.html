@@ -19,9 +19,11 @@
   </head>
   <body>
     <body>
-      <div class="Header-Div">
+      <div class="container-fluid">
+      <header class="Header-Div">
         <a href="index.html">
           <img
+            class="logo-img"
             src="assests/images/logo.png"
             alt="logo"
             width="200px"
@@ -29,74 +31,81 @@
           />
         </a>
         <a href="login.html">Login</a>
-      </div>
-      <div class="Content Div">
+      </header>
+      <div class="Content-div">
         <ul>
-          <li><a href="#">List View</a></li>
-          <li><a href="#">Map View</a></li>
+          <li><a href="#list-view">List View</a></li>
+          <li><a href="#map-view">Map View</a></li>
         </ul>
 
-        <div class="hotel-div">
-          <a href="detail.html">
+        <div id="list-view">
+          <div class="hotel-div">
+            <a href="detail.html">
+              <img
+                src="assests/images/images_places/Radisson-Blu.jpg"
+                alt="Radisson-Blu"
+                class="hotel-img"
+              />
+              <h4 class="text-primary">Radisson Blu Hotel</h4>
+              <p class="text-primary">5 star</p>
+              <p class="text-primary">New Delhi</p>
+            </a>
+          </div>
+
+          <div class="hotel-div">
             <img
-              src="assests/images/images_places/Radisson-Blu.jpg"
-              alt="Radisson-Blu"
+              src="assests/images/images_places/facade.jpg"
+              alt="Lalit hotel"
+              class="hotel-img"
             />
-            <h4 class="text-primary">Radisson Blu Hotel</h4>
-            <p class="text-primary">5 star</p>
-            <p class="text-primary">New Delhi</p>
-          </a>
+            <h4>The Lalit New Delhi</h4>
+            <p>4.5 star</p>
+            <p>New Delhi</p>
+          </div>
+
+          <div class="hotel-div">
+            <img
+              src="assests/images/images_places/exterior.jpg"
+              alt="Taj Palace"
+              class="hotel-img"
+            />
+            <h4>Taj Palace</h4>
+            <p>4.0 star</p>
+            <p>Delhi</p>
+          </div>
         </div>
 
-        <div class="hotel-div">
-          <img
-            src="assests/images/images_places/facade.jpg"
-            alt="Lalit hotel"
-          />
-          <h4>The Lalit New Delhi</h4>
-          <p>4.5 star</p>
-          <p>New Delhi</p>
+        <div id="map-view">
+          <img src="assests/images/images_places/Map.webp" alt="map" />
+          <p>MAP VIEW</p>
         </div>
-
-        <div class="hotel-div">
-          <img
-            src="assests/images/images_places/exterior.jpg"
-            alt="Taj Palace"
-          />
-          <h4>Taj Palace</h4>
-          <p>4.0 star</p>
-          <p>Delhi</p>
-        </div>
-
-        <img src="assests/images/images_places/Map.webp" alt="map" />
-        <p>MAP VIEW</p>
-      </div>
-      <div class="Footer-Div">
-        <a href="contact.html">Contact Us</a>
-        <div class="social-media-imgs-div">
-          <a href="https://www.facebook.com/" target="_blank">
-            <img
-              class="social-media-imgs"
-              src="assests/images/facebook.png"
-              alt="Facebook"
-            />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img
-              class="social-media-imgs"
-              src="assests/images/instagram.png"
-              alt="Facebook"
-            />
-          </a>
-          <a href="https://twitter.com/" target="_blank">
-            <img
-              class="social-media-imgs"
-              src="assests/images/twitter.png"
-              alt="Facebook"
-            />
-          </a>
-        </div>
-        <p>@2020 ROOM SEARCH PVT LTD.</p>
+        <footer class="Footer-Div">
+          <a href="contact.html">Contact Us</a>
+          <div class="social-media-imgs-div">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                class="social-media-imgs"
+                src="assests/images/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                class="social-media-imgs"
+                src="assests/images/instagram.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <img
+                class="social-media-imgs"
+                src="assests/images/twitter.png"
+                alt="Facebook"
+              />
+            </a>
+          </div>
+          <p>@2020 ROOM SEARCH PVT LTD.</p>
+        </footer>
       </div>
     </body>
     <script
