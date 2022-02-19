@@ -2,3 +2,22 @@
   width: 250px;
   height: 200px;
 }
+
+.hotel-link {
+  display: inline-block;
+}
+.hotel-div {
+  margin: 2%;
+  background-color: rgb(132, 136, 139);
+  width: 40%;
+}
+
+.hotel-link:link {
+  width: 100%;
+}
+
+.view {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: 0.4rem;
+}

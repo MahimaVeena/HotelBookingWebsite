@@ -2,3 +2,28 @@
   max-width: 150px;
   height: 150px;
 }
+
+.search-bar {
+  background-image: url("/assests/images/images_places/background-img.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 380px;
+
+  background-size: cover;
+}
+
+.img-div {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.img-container {
+  padding: 4%;
+  border-radius: 15%;
+}
+
+.img-place {
+  border-radius: 15%;
+}
