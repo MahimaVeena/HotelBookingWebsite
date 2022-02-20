@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -20,7 +24,9 @@
   <body>
     <body>
       <div class="container-fluid px-0">
-        <header class="Header-Div">
+        <header
+          class="Header-Div d-flex justify-content-between align-items-center"
+        >
           <img
             class="logo-img"
             src="assests/images/logo.png"
@@ -29,11 +35,13 @@
             height="150px"
           />
 
-          <a href="login.html">Login</a>
+          <a href="login.html" class="login-link">Login</a>
         </header>
         <div class="container-div">
-          <div class="search-bar">
-            <input type="text" placeholder="City" />
+          <div
+            class="search-bar d-flex align-items-center justify-content-center"
+          >
+            <input type="text" placeholder="City" class="search" />
           </div>
           <div class="img-div">
             <a href="list.html" class="d-inline-block img-container">
@@ -68,11 +76,18 @@
               />
             </a>
           </div>
-          <a href="#">View more >></a>
+          <div class="view-more-container">
+            <a href="index.html" class="view-more">View more >></a>
+          </div>
         </div>
-        <footer class="Footer-Div">
-          <a href="contact.html">Contact Us</a>
-          <div class="social-media-imgs-div">
+        <footer
+          class="Footer-Div d-flex align-items-center justify-content-between"
+        >
+          <a href="contact.html" class="contact-link">Contact Us</a>
+          <p id="copywright" class="my-0 align-self-end">
+            @2020 ROOM SEARCH PVT LTD.
+          </p>
+          <div class="social-media-imgs-div d-flex align-items-center">
             <a href="https://www.facebook.com/" target="_blank">
               <img
                 class="social-media-imgs"
@@ -95,7 +110,6 @@
               />
             </a>
           </div>
-          <p>@2020 ROOM SEARCH PVT LTD.</p>
         </footer>
       </div>
     </body>

@@ -1,3 +1,8 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  /* font-family: sans-serif; */
+}
+
 .img-place {
   max-width: 150px;
   height: 150px;
@@ -9,9 +14,20 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  height: 380px;
+  height: 360px;
 
   background-size: cover;
+}
+
+.search {
+  margin-top: 4rem;
+  height: 2.6rem;
+  width: 16rem;
+  padding-left: 10px;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  border-radius: 12px;
 }
 
 .img-div {
@@ -26,4 +42,12 @@
 
 .img-place {
   border-radius: 15%;
+}
+
+.view-more {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
 }

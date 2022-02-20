@@ -6,6 +6,9 @@
 
 .hotel-big-img {
   margin-right: 4%;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 1rem;
 }
 
 .booking-form {
@@ -16,4 +19,9 @@
 .hotel-description {
   margin-right: 4%;
   margin-top: 1%;
+}
+
+.hotel-description p,
+.hotel-description ul {
+  font-weight: 500;
 }

@@ -1,7 +1,7 @@
 .hotel_description {
   background-color: rgb(132, 136, 139);
 
-  max-width: 50%;
+  max-width: 70%;
   max-height: 20%;
   margin: 2% auto;
 }
@@ -19,4 +19,10 @@
   border: 1px black solid;
   border-radius: 5px;
   padding: 1% 2%;
+}
+
+.pay-now {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
