@@ -10,6 +10,9 @@
   margin: 2%;
   background-color: rgb(132, 136, 139);
   width: 40vw;
+  height: fit-content;
+  /* text-align: center; */
+  background-color: #ccc;
 }
 
 .hotel-link:link {
@@ -50,4 +53,10 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   grid-row-gap: 1rem;
+  margin-bottom: 6rem;
+}
+
+.description {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }

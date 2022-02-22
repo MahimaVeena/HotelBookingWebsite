@@ -7,22 +7,44 @@
 }
 
 .hotel-big-img {
-  max-width: 70%;
-}
-
-.customer_details {
-  margin: 2%;
-}
-
-.tariff {
-  margin: 2%;
-  border: 1px black solid;
-  border-radius: 5px;
-  padding: 1% 2%;
+  width: 240px;
+  height: 216px;
 }
 
 .pay-now {
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+.customer_details {
+  margin: 1% 0;
+}
+
+.Content-Div {
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hotel-description-content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 3rem 0 2rem;
+}
+
+.payment_details strong,
+.tariff strong {
+  font-family: cursive;
+}
+
+.payment_details {
+  border: 1px solid black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bc8f8f;
 }

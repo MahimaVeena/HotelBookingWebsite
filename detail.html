@@ -27,65 +27,73 @@
         <header
           class="Header-Div d-flex justify-content-between align-items-center"
         >
-          <img
-            class="logo-img"
-            src="assests/images/logo.png"
-            alt="logo"
-            width="200px"
-            height="150px"
-          />
+          <a href="index.html">
+            <img
+              class="logo-img"
+              src="assests/images/logo.png"
+              alt="logo"
+              width="200px"
+              height="150px"
+            />
+          </a>
 
           <a href="login.html" class="login-link">Login</a>
         </header>
         <div class="Content-Div">
-          <div class="hotel-img-div">
-            <img
-              class="hotel-big-img"
-              src="assests/images/images_places/Radisson-Blu.jpg"
-              alt="Radisson
+          <div class="hotel-booking d-flex">
+            <div class="hotel-img-div d-flex">
+              <img
+                class="hotel-big-img img-fluid"
+                src="assests/images/images_places/Radisson-Blu.jpg"
+                alt="Radisson
           Blu"
-            />
+              />
+            </div>
+            <div class="payment-form d-flex justify-items-center">
+              <form action="payment.html" class="my-2 booking-form">
+                <!-- <div class="label-div d-flex"> -->
+
+                <!-- </div> -->
+
+                <!-- <div class="input-fields"> -->
+                <label for="Adults">Adults:</label>
+                <input
+                  type="number"
+                  id="Adults"
+                  name="Adults"
+                  min="1"
+                  oninvalid="this.setCustomValidity('value must be greater than or equal to 1')"
+                  oninput="setCustomValidity('')"
+                  step="1"
+                  required
+                />
+                <label for="cust_name">Name:</label>
+                <input
+                  type="text"
+                  id="cust_name"
+                  name="cust_name"
+                  autocomplete="no"
+                  required
+                />
+                <label for="from_date">From Date:</label>
+                <input type="date" id="from_date" name="from_date" required />
+                <label for="to_date">To Date:</label>
+                <input type="date" id="to_date" name="to_date" required />
+                <label for="total">Total:</label>
+                <input type="text" id="total" name="total" disabled required />
+
+                <input type="submit" value="book now" class="submit" />
+                <!-- </div> -->
+              </form>
+            </div>
           </div>
-          <form action="payment.html" class="my-2 booking-form">
-            <label for="Adults">Adults:</label>
-            <input
-              type="number"
-              id="Adults"
-              name="Adults"
-              min="1"
-              oninvalid="this.setCustomValidity('value must be greater than or equal to 1')"
-              oninput="setCustomValidity('')"
-              step="1"
-              required
-            />
-            <br />
-            <label for="cust_name">Name:</label>
-            <input
-              type="text"
-              id="cust_name"
-              name="cust_name"
-              autocomplete="no"
-              required
-            />
-            <br />
-            <label for="from_date">From Date:</label>
-            <input type="date" id="from_date" name="from_date" required />
-            <br />
-            <label for="to_date">To Date:</label>
-            <input type="date" id="to_date" name="to_date" required />
-            <br />
-            <label for="total">Total:</label>
-            <input type="text" id="total" name="total" disabled required />
-            <br />
-            <input type="submit" value="book now" />
-          </form>
 
           <div class="hotel-description">
             <h2>Radisson Blu Hotel</h2>
 
-            <p>RATING</p>
+            <h6>RATING</h6>
             <p>5 star</p>
-            <p>AMENITIES</p>
+            <h6>AMENITIES</h6>
 
             <ul>
               <li>Room Service</li>
@@ -95,7 +103,7 @@
               <li>Pool</li>
             </ul>
 
-            <h5>DESCRIPTION</h5>
+            <h6>DESCRIPTION</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
               dolore quis, ut mollitia sed incidunt, dolorum eius ducimus
@@ -108,9 +116,7 @@
           class="Footer-Div d-flex align-items-center justify-content-between"
         >
           <a href="contact.html" class="contact-link">Contact Us</a>
-          <p id="copywright" class="my-0 align-self-end">
-            @2020 ROOM SEARCH PVT LTD.
-          </p>
+          <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
           <div class="social-media-imgs-div d-flex align-items-center">
             <a href="https://www.facebook.com/" target="_blank">
               <img
