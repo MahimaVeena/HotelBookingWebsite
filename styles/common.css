@@ -104,3 +104,12 @@ footer {
 .hotel-img-div {
   /* margin-top: 2.4rem; */
 }
+
+.login-btn:hover {
+  background-color: #eee;
+}
+
+.btn-info {
+  width: 11%;
+  height: 75%;
+}

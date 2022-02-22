@@ -60,3 +60,23 @@
   padding-left: 1rem;
   padding-top: 1rem;
 }
+
+.btn,
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+  color: black;
+}
+
+.nav {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.map {
+  height: 34rem;
+}
+
+.hotel-div:hover {
+  background-color: #bc8f8f;
+}

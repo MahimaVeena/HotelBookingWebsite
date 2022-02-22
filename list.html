@@ -38,12 +38,18 @@
             height="150px"
           />
         </a>
-          <a href="login.html" class="login-link">Login</a>
+        <button type="button" class="login-btn btn btn-light me-2" onclick="handleLogin()">
+          Login
+        </button>
         </header>
       <div class="Content-div">
-        <ul class="view" id="view_list_map">
-          <li><a href="#view_list_map">List View</a></li>
-          <li><a href="#map-view">Map View</a></li>
+        <ul class="nav nav-pills d-flex justify-content-center">
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary list-view-btn" onclick="handleView(event)">List View</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn map-view-btn" onclick="handleView(event)">Map View</button>
+          </li>
         </ul>
 
         <div id="list-view">
@@ -94,13 +100,13 @@
         </div>
       </div>
         <div id="map-view">
-          <img src="assests/images/images_places/Map.webp" alt="map" />
+          <img class="map" src="assests/images/images_places/Map.webp" alt="map" />
           <!-- <p>MAP VIEW</p> -->
         </div>
         <footer
         class="Footer-Div d-flex align-items-center justify-content-between"
       >
-        <a href="contact.html" class="contact-link">Contact Us</a>
+      <button type="button" class="btn btn-info d-flex align-items-center justify-content-center text-light" onclick="handleContactUs(this)">Contact Us</button>
         <p id="copywright" class="my-0">
           @2020 ROOM SEARCH PVT LTD.
         </p>
@@ -126,14 +132,101 @@
               alt="Facebook"
             />
           </a>
+          <div class="modal login-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Please Login</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+
+                    onclick="closeLogin(event)"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="form-control py-4" onsubmit="closeLogin(event)">
+                    <div class="row">
+                      <div class="col">
+                        <label for="email">Username </label>
+                      </div>
+                      <div class="col-8">
+                        <input type="email" name="email" required />
+                      </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                      <div class="col">
+                        <label for="password">Password</label>
+                      </div>
+                      <div class="col-8">
+                        <input
+                          type="password"
+                          name="password"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <input type="submit" value="login" class="btn btn-primary"/>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal get-in-touch" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Get in touch</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+
+                    onclick="closeContactUs(event)"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="form-control" onsubmit="closeContactUs(event)">
+                    <p>Thank you for reaching out!!!</p>
+                    <p>Please enter your email and we will get back to you.</p>
+                    <div class="row">
+                      <div class="col">
+                        <label for="email">Username </label>
+                      </div>
+                      <div class="col-8">
+                        <input type="email" name="email" required />
+                      </div>
+                    </div>
+                    
+                  
+                </div>
+                <div class="modal-footer d-flex justify-content-end">
+                  <input type="submit" value="submit" class="btn btn-primary"/>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
       </div>
     </body>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/list.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+   
   </body>
 </html>

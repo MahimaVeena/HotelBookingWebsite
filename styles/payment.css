@@ -48,3 +48,7 @@
   justify-content: space-around;
   background-color: #bc8f8f;
 }
+
+.pay-now {
+  pointer-events: none;
+}
