@@ -16,6 +16,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/queries.css"/>
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/index.css" />
 
@@ -24,6 +25,8 @@
   <body>
     <body>
       <div class="container-fluid px-0">
+
+        <!--HEADER SECTION-->
         <header
           class="Header-Div d-flex justify-content-between align-items-center"
         >
@@ -31,27 +34,33 @@
             class="logo-img"
             src="assests/images/logo.png"
             alt="logo"
-            width="200px"
-            height="150px"
+            width="12.5rem"
+            height="9.75rem"
           />
 
           <button type="button" class="login-btn btn btn-light me-2" onclick="handleLogin()">
             Login
           </button>
         </header>
+
+        <!--MAIN CONTENT CONTAINER-->
         <div class="container-div d-flex">
+
+          <!--BACKGROUND IMAGE-->
           <div
             class="search-bar d-flex align-items-center justify-content-center"
           >
-            <form class="search-city-form">
+            <form class="search-city-form d-flex align-items-center justify-content-center">
               <input type="text" placeholder="City" class="search" />
             </form>
           </div>
-          <div class="img-div d-flex">
+
+          <!--CITY CARDS DIV-->
+          <div class="img-div">
             <a href="list.html" class="d-inline-block img-container img-delhi">
               <div class="places-div">
                 <img
-                  class="img-place img-fluid"
+                  class="img-fluid img-place d-inline-block"
                   src="assests/images/images_places/new-delhi.jpg"
                   alt="Delhi"
                 />
@@ -62,7 +71,7 @@
             <div class="places-div">
               <a href="#" class="d-inline-block img-container">
                 <img
-                  class="img-place img-fluid"
+                  class="img-place d-inline-block"
                   src="assests/images/images_places/goa.jpg"
                   alt="Goa"
                 />
@@ -74,7 +83,7 @@
             <div class="places-div">
               <a href="#" class="d-inline-block img-container">
                 <img
-                  class="img-place img-fluid"
+                  class="img-place d-inline-block"
                   src="assests/images/images_places/charminar.jpg"
                   alt="Hyderabad"
                 />
@@ -86,7 +95,7 @@
             <div class="places-div">
               <a href="#" class="d-inline-block img-container">
                 <img
-                  class="img-place img-fluid"
+                  class="img-place d-inline-block"
                   src="assests/images/images_places/kolkata-calcutta.jpg"
                   alt="Culcutta"
                 />
@@ -95,11 +104,15 @@
               </a>
             </div>
           </div>
+
+          <!--VIEW MORE BUTTON-->
           <div class="view-more-container">
             <a href="index.html">
             <button type="button" class="btn btn-secondary view-more">View More</button>
           </a>
           </div>
+
+          <!--LOGIN MODAL-->
           <div class="modal login-modal" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -148,6 +161,8 @@
             </div>
           </div>
 
+
+          <!--CONTACT US MODAL-->
           <div class="modal get-in-touch" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -185,35 +200,37 @@
             </div>
           </div>
         </div>
+
+        <!--FOOTER SECTION-->
         <footer
-          class="Footer-Div d-flex align-items-center justify-content-between"
-        >
-        <button type="button" class="btn btn-info d-flex align-items-center justify-content-center text-light" onclick="handleContactUs(this)">Contact Us</button>
-          <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
-          <div class="social-media-imgs-div d-flex align-items-center">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img
-                class="social-media-imgs"
-                src="assests/images/facebook.png"
-                alt="Facebook"
-              />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img
-                class="social-media-imgs"
-                src="assests/images/instagram.png"
-                alt="Facebook"
-              />
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-              <img
-                class="social-media-imgs"
-                src="assests/images/twitter.png"
-                alt="Facebook"
-              />
-            </a>
-          </div>
-        </footer>
+        class="Footer-Div d-flex align-items-center justify-content-between"
+      >
+      <button type="button" class="btn  contact-button btn-info d-flex align-items-center justify-content-center text-light" onclick="handleContactUs(this)">Contact Us</button>
+        <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
+        <div class="social-media-imgs-div d-flex align-items-center">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              class="social-media-imgs"
+              src="assests/images/facebook.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              class="social-media-imgs"
+              src="assests/images/instagram.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              class="social-media-imgs"
+              src="assests/images/twitter.png"
+              alt="Facebook"
+            />
+          </a>
+        </div>
+      </footer>
       </div>
     
     <script src="scripts/common.js"></script>

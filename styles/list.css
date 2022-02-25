@@ -1,6 +1,22 @@
+/***NAVIGATION***/
+
+.btn,
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+  color: black;
+}
+
+.nav {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/***LIST VIEW****/
+
 .hotel-img {
-  width: 250px;
-  height: 200px;
+  width: 15.625rem;
+  height: 12.5rem;
 }
 
 .hotel-link {
@@ -11,7 +27,6 @@
   background-color: rgb(132, 136, 139);
   width: 40vw;
   height: fit-content;
-  /* text-align: center; */
   background-color: #ccc;
 }
 
@@ -21,31 +36,9 @@
   color: black !important;
 }
 
-.view {
-  margin-top: 1rem;
-  margin-left: 0.4rem;
-  margin-bottom: 1.8rem;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.view li a {
-  text-decoration: none;
-
-  font-weight: bold;
-  display: inline-block;
-  margin: 0 1rem;
-  color: black;
-}
-
 .hotel-div a h4,
 .hotel-div a p {
   color: black;
-}
-
-#map-view {
-  display: none;
 }
 
 #list-view {
@@ -61,22 +54,30 @@
   padding-top: 1rem;
 }
 
-.btn,
-.btn:active,
-.btn:focus {
-  box-shadow: none;
-  color: black;
+.hotel-div:hover {
+  background-color: #bc8f8f;
+}
+.checked {
+  color: orange;
 }
 
-.nav {
-  margin-top: 1rem;
-  margin-bottom: 1.2rem;
+/*** MAP VIEW***/
+
+#map-view {
+  display: none;
 }
 
 .map {
-  height: 34rem;
+  max-width: 100%;
 }
 
-.hotel-div:hover {
-  background-color: #bc8f8f;
+/***OTHERS***/
+
+.Content-div {
+  min-height: 90vh;
+}
+
+.login-modal,
+.get-in-touch {
+  z-index: 3;
 }

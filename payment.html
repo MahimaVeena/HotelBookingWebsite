@@ -19,11 +19,14 @@
     />
     <link href="styles/common.css" rel="stylesheet" />
     <link href="styles/payment.css" rel="stylesheet" />
+    <link href="styles/queries.css" rel="stylesheet" />
     <title>Payment</title>
   </head>
   <body>
     <body>
-      <div class="container-fluid">
+      <div class="payment-container container-fluid">
+
+        <!--HEADER SECTION-->
         <header
           class="Header-Div d-flex justify-content-between align-items-center"
         >
@@ -32,8 +35,8 @@
               class="logo-img"
               src="assests/images/logo.png"
               alt="logo"
-              width="200px"
-              height="150px"
+              width="12.5rem"
+              height="9.375rem"
             />
           </a>
 
@@ -45,21 +48,27 @@
             Login
           </button>
         </header>
+
+        <!--MAIN CONTENT CONTAINER-->
         <div class="Content-Div d-flex">
+
+          <!--HOTEL DESCRIPTION-->
           <div class="hotel_description d-flex">
-            <div class="hotel-img-div">
+            <div class="hotel-img-div h-img-div-payment">
               <img
                 src="assests/images/images_places/Radisson-Blu.jpg"
                 alt="Radisson Blu"
-                class="hotel-big-img img-fluid"
+                class="hotel-big-img-1 img-fluid"
               />
             </div>
             <div class="hotel-description-content d-flex">
-              <h2>Radisson Blu</h2>
-              <p>#38 of 1,289 hotels in New Delhi</p>
-              <p>National Highway 8, New Delhi 110017 India</p>
+              <h2 class="d-flex">Radisson Blu Hotel</h2>
+              <p class="d-flex">#38 of 1,289 hotels in New Delhi</p>
+              <p class="d-flex">National Highway 8, New Delhi 110017 India</p>
             </div>
           </div>
+
+          <!--PAYMENT DETAILS-->
           <div class="payment_details d-flex">
             <div class="customer_details">
               <p><strong>Name: </strong>John Doe</p>
@@ -78,12 +87,13 @@
           </div>
         </div>
 
+        <!--FOOTER SECTION -->
         <footer
           class="Footer-Div d-flex align-items-center justify-content-between"
         >
           <button
             type="button"
-            class="btn btn-info d-flex align-items-center justify-content-center text-light"
+            class="btn contact-button btn-info d-flex align-items-center justify-content-center text-light"
             onclick="handleContactUs(this)"
           >
             Contact Us
@@ -114,6 +124,8 @@
               />
             </a>
           </div>
+
+          <!--LOGIN MODAL-->
           <div class="modal login-modal" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -162,6 +174,7 @@
             </div>
           </div>
 
+          <!--CONTACT US MODAL-->
           <div class="modal get-in-touch" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">

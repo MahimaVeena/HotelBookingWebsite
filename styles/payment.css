@@ -1,3 +1,10 @@
+.Content-Div {
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/****HOTEL DESCRIPTION***/
 .hotel_description {
   background-color: rgb(132, 136, 139);
 
@@ -6,11 +13,34 @@
   margin: 2% auto;
 }
 
-.hotel-big-img {
-  width: 240px;
-  height: 216px;
+.hotel-big-img-1 {
+  width: 15rem;
+  height: 13.5rem;
 }
 
+.hotel-description-content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 3rem 0 2rem;
+}
+
+.hotel_description {
+  background-color: rgb(132, 136, 139);
+
+  max-width: 70%;
+  max-height: 20%;
+  margin: 2% auto;
+}
+
+.hotel-description-content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 3rem 0 2rem;
+}
+
+/****BOOKING DETAILS****/
 .pay-now {
   text-decoration: none;
   color: black;
@@ -21,17 +51,30 @@
   margin: 1% 0;
 }
 
-.Content-Div {
-  flex-direction: column;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.payment_details strong,
+.tariff strong {
+  font-family: cursive;
 }
 
-.hotel-description-content {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 3rem 0 2rem;
+.payment_details {
+  border: 1px solid black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bc8f8f;
+}
+
+.pay-now {
+  pointer-events: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.customer_details {
+  margin: 1% 0;
 }
 
 .payment_details strong,

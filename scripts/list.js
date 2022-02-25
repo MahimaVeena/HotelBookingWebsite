@@ -1,5 +1,7 @@
 const listView = document.querySelector("#list-view");
 const mapView = document.querySelector("#map-view");
+
+/**handling navigation between list view and map view **/
 function handleView(event) {
   event.preventDefault();
   if (event.target.className.includes("list-view-btn")) {
@@ -22,6 +24,6 @@ function handleView(event) {
       .classList.add("btn-primary");
 
     listView.style.display = "none";
-    mapView.style.display = "initial";
+    mapView.style.display = "block";
   }
 }
